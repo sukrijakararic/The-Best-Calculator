@@ -20,7 +20,7 @@ const getSum = () => {
     the strings to actual numbers. If we used value here instead of up there, we would only add the two strings. for ex. instead of (3+1=4), it would be ("3"+"1"="31"). If we didn't use value
     at all, then whatever we type in the input boxes would return [HTML input element][HTML input element]
     
-    once the arithmetic operation has been stored in a variable, we then access the DOM to specify where the answer will print the sum variable. In our case, its the span element with the 
+    once the arithmetic operation has been stored in a variable, we then access the DOM to specify where the answer will print the sum variable. In our case, its the paragraph element with the 
     id of "operation" */
     const sum = Number(box1) + Number(box2);
     document.getElementById("operation").innerHTML = sum;
