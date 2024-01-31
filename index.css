@@ -14,9 +14,24 @@ p {
     background-color: lightgreen;
     margin: 0 1rem;
     border: 1px solid grey;
+    font-size: x-large;
 }
 
 h1 {
     background-color: lightgray;
     margin: 0 1rem;
+}
+
+input {
+    font-size: large;
+}
+
+#button {
+    padding: 0 1rem;
+    background-color: lightgray;
+
+}
+
+label {
+    font-size: large;
 }
