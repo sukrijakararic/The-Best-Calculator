@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/index.css" rel="stylesheet" />
+    <title>Sum Calculator</title>
+  </head>
+  <body>
+    <h1>Sum Calculator</h1>
+
+    <form action="">
+      <input type="text" id="box1" /><br />
+
+      <input type="radio" name="action" id="+" />
+      <label for="+">+</label>
+      <span>|</span>
+      <input type="radio" name="action" id="-" />
+      <label for="-">-</label>
+      <span>|</span>
+      <input type="radio" name="action" id="*">
+      <label for="*">*</label>
+      <span>|</span>
+      <input type="radio" name="action" id="/">
+      <label for="/">/</label>
+
+      <br />
+
+      <input type="text" id="box2" /><br />
+
+      <input type="button" value="=" onclick="getSum()" /><br />
+
+      <span id="operation"></span>
+    </form>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
