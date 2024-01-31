@@ -3,14 +3,14 @@ const getSum = () => {
     // We start but putting the necessary elements into variables so we can refrence them when needed
 
     // the first two variables store the VALUE of our input text field. NOT the text field itself
-  let box1 = document.getElementById("box1").value;
-  let box2 = document.getElementById("box2").value;
+  const box1 = document.getElementById("box1").value;
+  const box2 = document.getElementById("box2").value;
 
   // These four variables store the elements pertaining to the operator signs.
-  let plus = document.getElementById("+");
-  let minus = document.getElementById("-");
-  let multiply = document.getElementById("*");
-  let divide = document.getElementById("/");
+  const plus = document.getElementById("+");
+  const minus = document.getElementById("-");
+  const multiply = document.getElementById("*");
+  const divide = document.getElementById("/");
 
 
 
@@ -22,18 +22,18 @@ const getSum = () => {
     
     once the arithmetic operation has been stored in a variable, we then access the DOM to specify where the answer will print the sum variable. In our case, its the span element with the 
     id of "operation" */
-    let sum = Number(box1) + Number(box2);
+    const sum = Number(box1) + Number(box2);
     document.getElementById("operation").innerHTML = sum;
   } else if (minus.checked) {
-    let sum = Number(box1) - Number(box2);
+    const sum = Number(box1) - Number(box2);
     document.getElementById("operation").innerHTML = sum;
   }
   else if (multiply.checked) {
-    let sum = Number(box1) * Number(box2);
+    const sum = Number(box1) * Number(box2);
     document.getElementById("operation").innerHTML = sum;
   }
   else if (divide.checked) {
-    let sum = Number(box1) / Number(box2);
+    const sum = Number(box1) / Number(box2);
     document.getElementById("operation").innerHTML = sum;
   }
 };
